@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "greeting": "Xin Chào,",
+    "name": "Tớ là Nguyên!",
+    "title": "Tớ là 1 Web Developer",
+    "description": "Biến những ý tưởng táo bạo thành kiệt tác số",
+    "speech": {
+      "first": "Xin chào! Tôi rất vui được giới thiệu portfolio của mình.",
+      "second": "Tôi chuyên tạo ra những trải nghiệm web tương tác và responsive."
+    }
+  }
+}
