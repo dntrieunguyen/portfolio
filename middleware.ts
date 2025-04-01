@@ -9,11 +9,15 @@ export default async function middleware(req: NextRequest) {
 
   // Skip middleware for static files and images
   if (
-    pathname.includes('.png') || 
-    pathname.includes('.jpg') || 
-    pathname.includes('.jpeg') || 
-    pathname.includes('.svg') || 
-    pathname.includes('.gif')
+    pathname.includes(".png") ||
+    pathname.includes(".jpg") ||
+    pathname.includes(".jpeg") ||
+    pathname.includes(".svg") ||
+    pathname.includes(".gif") ||
+    pathname.includes(".ico") ||
+    pathname.includes(".webp") ||
+    pathname.includes(".woff") ||
+    pathname.includes(".glb")
   ) {
     return NextResponse.next();
   }
@@ -35,7 +39,7 @@ export default async function middleware(req: NextRequest) {
   // INTL LOGIC AFTER AUTH
   if (!localePattern.test(pathname)) {
     const newUrl = req.nextUrl.clone();
-    newUrl.pathname = `/en${pathname}`;
+    newUrl.pathname = `/${routing.defaultLocale}${pathname}`;
     return NextResponse.redirect(newUrl);
   }
 
