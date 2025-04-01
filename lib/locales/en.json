@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "greeting": "Hey There,",
+    "name": "I'm Jayson D!",
+    "title": "Experienced Web Developer",
+    "description": "Turning wild ideas into digital masterpieces, one line of code at a time.",
+    "speech": {
+      "first": "Hi there! I'm excited to showcase my portfolio.",
+      "second": "I specialize in creating responsive and interactive web experiences."
+    }
+  }
+}
